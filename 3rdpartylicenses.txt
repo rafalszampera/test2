@@ -46,7 +46,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-@angular/animations@5.2.2
+@angular/forms@5.2.2
 MIT
 MIT
 
@@ -54,11 +54,7 @@ MIT
 MIT
 MIT
 
-@angular/core@5.2.2
-MIT
-MIT
-
-@angular/forms@5.2.2
+@angular/router@5.2.2
 MIT
 MIT
 
@@ -66,7 +62,11 @@ MIT
 MIT
 MIT
 
-@angular/router@5.2.2
+@angular/core@5.2.2
+MIT
+MIT
+
+@angular/animations@5.2.2
 MIT
 MIT
 

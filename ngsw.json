@@ -9,13 +9,13 @@
       "urls": [
         "/test2/favicon.ico",
         "/test2/index.html",
-        "/test2/0.0aa47c45a7518c2d2ace.chunk.js",
-        "/test2/1.08d0dbdb1df69f3aeb1a.chunk.js",
-        "/test2/2.e61021c2c9b4723827bc.chunk.js",
-        "/test2/inline.6b10e060cbfed105179a.bundle.js",
-        "/test2/main.b160a1c48d06a61c7e0e.bundle.js",
+        "/test2/0.aae87b761ad6ee4884d9.chunk.js",
+        "/test2/1.9e7bdaa32b9973177972.chunk.js",
+        "/test2/2.5e73550dab290344402a.chunk.js",
+        "/test2/inline.3c3505e7d0efe05a7e54.bundle.js",
+        "/test2/main.669e777799edd5467f2c.bundle.js",
         "/test2/polyfills.a7098b48bd3a3816e920.bundle.js",
-        "/test2/styles.2dc7addf58c8bb8a09ff.bundle.css"
+        "/test2/styles.1ff42e5fc159800f231d.bundle.css"
       ],
       "patterns": []
     },
@@ -47,30 +47,70 @@
         "/test2/assets/fonts/_morrisonsagenda-semi_bold_webtt-webfont.woff",
         "/test2/assets/img/ducky.jpg",
         "/test2/assets/img/favicon.png",
-        "/test2/assets/img/logo.png"
+        "/test2/assets/img/launch_anim.svg",
+        "/test2/assets/img/logo.png",
+        "/test2/assets/img/app_icon/icon-144x144.png",
+        "/test2/assets/img/app_icon/icon-168x168.png",
+        "/test2/assets/img/app_icon/icon-192x192.png",
+        "/test2/assets/img/app_icon/icon-48x48.png",
+        "/test2/assets/img/app_icon/icon-72x72.png",
+        "/test2/assets/img/app_icon/icon-96x96.png"
       ],
       "patterns": []
     }
   ],
-  "dataGroups": [],
+  "dataGroups": [
+    {
+      "name": "api-department",
+      "patterns": [
+        "https:\\/\\/search-iot-sensors-rczsoo6jftvvxdl4b2jf2dwrc4\\.eu-west-1\\.es\\.amazonaws\\.com\\/pwa_departments_idx\\/department\\/.*"
+      ],
+      "strategy": "performance",
+      "maxSize": 100,
+      "maxAge": 259200000,
+      "version": 1
+    },
+    {
+      "name": "api-activity",
+      "patterns": [
+        "https:\\/\\/search-iot-sensors-rczsoo6jftvvxdl4b2jf2dwrc4\\.eu-west-1\\.es\\.amazonaws\\.com\\/pwa_departments_idx\\/activity\\/_search\\?q=departmentId:d1"
+      ],
+      "strategy": "freshness",
+      "maxSize": 100,
+      "maxAge": 259200000,
+      "timeoutMs": 10000,
+      "version": 1
+    },
+    {
+      "name": "api-task",
+      "patterns": [
+        "https:\\/\\/search-iot-sensors-rczsoo6jftvvxdl4b2jf2dwrc4\\.eu-west-1\\.es\\.amazonaws\\.com\\/pwa_departments_idx\\/task\\/.*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 100,
+      "maxAge": 259200000,
+      "timeoutMs": 10000,
+      "version": 1
+    }
+  ],
   "hashTable": {
-    "/test2/0.0aa47c45a7518c2d2ace.chunk.js": "c1930985bb022c399455b859aed9785e5efdb9c5",
+    "/test2/0.aae87b761ad6ee4884d9.chunk.js": "1c9cc7f439d2bda1dc4f4bd8e71aedf19958b539",
     "/test2/assets/css/font-awesome.css": "a02674d823c7b577d38c3cdb91953993b6e4b3a0",
-    "/test2/1.08d0dbdb1df69f3aeb1a.chunk.js": "32f336054f5a602d31e00964e0a05cb57c5aedc3",
+    "/test2/1.9e7bdaa32b9973177972.chunk.js": "b7930d8c2fb99526c0b98193e7d0f9774a45ddf6",
     "/test2/assets/css/font-awesome.css.map": "1573904b82807abbb32c97a3632c6c6808eaac50",
-    "/test2/2.e61021c2c9b4723827bc.chunk.js": "5401ed572bbacad0c17cb2c72884d8959ce6f6ae",
+    "/test2/2.5e73550dab290344402a.chunk.js": "b59995f9ac865b9bf4079c25c65967f0fb13409e",
     "/test2/assets/css/font-awesome.min.css": "3c1d63dd1176c77f9f4cdb1616fbb08c31b9822f",
-    "/test2/inline.6b10e060cbfed105179a.bundle.js": "f655d6a8622618ddd4a1a9cfceb1d24e712a8ab4",
+    "/test2/inline.3c3505e7d0efe05a7e54.bundle.js": "39a7a8e63d4bf53686e660a00a2c746ca11ee49d",
     "/test2/assets/css/simple-line-icons.css": "3a63cbf31ec67eead4bb5f7b1ac004976c52f210",
-    "/test2/main.b160a1c48d06a61c7e0e.bundle.js": "6da1d02a5dce8037e5247f99c86fc35493d723f5",
+    "/test2/main.669e777799edd5467f2c.bundle.js": "59ac1aeb8b699e45ec555376682e3b3d49a50d4a",
     "/test2/assets/fonts/fontawesome-webfont.eot": "965ce8f688fedbeed504efd498bc9c1622d12362",
     "/test2/polyfills.a7098b48bd3a3816e920.bundle.js": "adc4a4a64da7d73ed2e92364406c6a101847afac",
     "/test2/assets/fonts/fontawesome-webfont.svg": "964e8dac2cee79c4b49b5bc300675773f6518812",
-    "/test2/styles.2dc7addf58c8bb8a09ff.bundle.css": "816453c7c3520f7f2792c3f2bd572f321f98c4bf",
+    "/test2/styles.1ff42e5fc159800f231d.bundle.css": "12f8500b67950c2d4832156c4c3a671e8034d544",
     "/test2/assets/fonts/fontawesome-webfont.ttf": "61d8d967807ef12598d81582fa95b9f600c3ee01",
-    "/test2/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+    "/test2/favicon.ico": "76b3bb81632c4672cb25b554faf119c7ddddc78f",
     "/test2/assets/fonts/fontawesome-webfont.woff": "da946b7c59164396551dec95902c8c0f97022565",
-    "/test2/index.html": "0b41110f98daaa3042472558b93218fb19bf73bc",
+    "/test2/index.html": "52890d78df8afedaf80dff39069c7f5593efbd59",
     "/test2/assets/fonts/fontawesome-webfont.woff2": "8f3597fbb1d56b036e841b0f705c38e2700b130a",
     "/test2/assets/fonts/FontAwesome.otf": "00957411a959ebc6c92935e21a4a2fb1e3ab4486",
     "/test2/assets/fonts/Roboto-Bold.ttf": "0ce37ced9c5fcac9bdc452a432c1258870ba4677",
@@ -86,6 +126,13 @@
     "/test2/assets/fonts/_morrisonsagenda-semi_bold_webtt-webfont.woff": "1235e0057af8b8919339ccd1c7e36948732cad7a",
     "/test2/assets/img/ducky.jpg": "d8a4a341664bfa3b99efb2a07110d2eec5ac4e0f",
     "/test2/assets/img/favicon.png": "b0e1a896200b1d84bc8067f7c0d543d94d627157",
-    "/test2/assets/img/logo.png": "88444864184e5219b35dd578adf141777b0e0451"
+    "/test2/assets/img/launch_anim.svg": "2cff331e7bf1ab5a0c4a8e3a562f8bdad00965a9",
+    "/test2/assets/img/logo.png": "88444864184e5219b35dd578adf141777b0e0451",
+    "/test2/assets/img/app_icon/icon-144x144.png": "1c06b013a99bd93eb295916fbfae3f80f0913acc",
+    "/test2/assets/img/app_icon/icon-168x168.png": "f6ebe894f52b333ff16292cb0a353507a1b950ce",
+    "/test2/assets/img/app_icon/icon-192x192.png": "e1dc3b2fa16c949496410f2df90487dc3b342232",
+    "/test2/assets/img/app_icon/icon-48x48.png": "41f3b4f490fc01eefdf0bb205b582a77cc6a0579",
+    "/test2/assets/img/app_icon/icon-72x72.png": "3655ca036298683c1ca810b203227d948cb929ec",
+    "/test2/assets/img/app_icon/icon-96x96.png": "58b042e509f8d52e6610a4ccc9c9b94720bf60ae"
   }
 }
